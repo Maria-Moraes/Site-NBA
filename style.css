@@ -1,0 +1,1030 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #777;
+}
+
+/*CABEÇALHO*/
+
+header{
+    background-color: rgb(255, 255, 255);
+}
+
+.inicio{
+    display: flex;
+
+}
+
+.entrada{
+    align-items: flex-start;
+    margin-top: 10px;
+    
+}
+
+.entrada img{
+    width: 45px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.carrinho img{
+    margin-top: 15px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.titulo{
+    position: relative;
+}
+
+.titulo h1{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titulo img{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suporte{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.suporte img{
+    width: 25px;
+}
+
+.mais-itens img{
+    width: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+nav{
+    background-color: #ffffff;
+}
+
+nav a{
+    color: #000000;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:hover{
+    background-color: #ffffff;
+}
+
+.dropdown-menu{
+    position: absolute;
+    display: none;
+}
+
+.dropdown-menu a{
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+/*Banner NBA*/
+
+.banner{
+    background-image: linear-gradient(100deg, #000000, #00000020), url(imagens/nbabanner.jpg);
+    height: 700px;
+    background-size: cover;
+    right: 150px;
+    padding: 150px 650px 0px 10px;
+    background-position: center;
+}
+
+.txtbanner{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.txtbanner h2{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/*****************Produtos******************/
+
+
+ /*MELHORES PRODUTOS*/
+
+
+.top-products{
+    display: flex;/*Definir um layout flexivel*/
+    flex-direction: column;/*Direção dos itens é vertical (coluna)*/
+    gap: 2rem;/*Espaçamento entre os elementos filhos*/
+    margin-bottom: 3rem;/*Margem inferior*/
+}
+
+.container-options{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container-options a{
+    text-decoration: none;
+}
+
+.container-options span{
+    color: #ffffff;
+    background-color: #000000;
+    padding: 0.7rem 3rem;
+    font-size: 1.4rem;
+    text-transform: capitalize;/*Capitaliza o primeiro caractere de cada palavra*/
+    border-radius: 2rem;/*Arredonda as bordas*/
+    cursor: pointer;
+}
+
+.container-options span:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container-options span.active{
+    background-color: #000000;
+    color: #fff;
+}
+
+/*SOBRE*/
+
+.sobre{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-titulo{
+    font-size: 25px;
+}
+
+.sobre img{
+    width: 20rem;
+    border-radius: 0.5rem;
+}
+
+/*DESTAQUES*/
+
+.tipos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.titulodestaque{
+    color: black;
+    text-align: center;
+    background-color: #fff;
+    padding: 0.5rem 40rem;
+    border-radius: 0.3rem;
+    margin-top: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.container-categoria{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.card-categoria{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 1rem;
+}
+
+.categoria-warriors{
+    background-image: linear-gradient(#00000000, #00000080), url(imagens/warriors.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+.categoria-76ers{
+    background-image: linear-gradient(#00000000, #00000080), url(imagens/76ers.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+.categoria-bulls{
+    background-image: linear-gradient(#00000000, #00000080), url(imagens/bulls.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+.categoria-celtics{
+    background-image: linear-gradient(#00000000, #00000080), url(imagens/celtics.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+.categoria-lakers{
+    background-image: linear-gradient(#00000000, #00000080), url(imagens/lakers.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+.categoria-nets{
+    background-image: linear-gradient(#00000000, #00000080), url(imagens/nets.jpeg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-knicks{
+    background-image: linear-gradient(#00000000, #00000080), url(imagens/knicks.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-bucks{
+    background-image: linear-gradient(#00000000, #00000080), url(imagens/bucks.jpeg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-thunder{
+    background-image: linear-gradient(#00000000, #00000080), url(imagens/thunder.jpeg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+
+.card-categoria p{
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;/*Coloca em letra maiuscula a primeira letra do texto*/
+    position: relative;/*Define a posição dos <p> elementos como relativa o que nos permite posicionar o pseudo-elemento ::after de forma absoluta*/
+}
+
+.card-categoria p::after{
+    content: '';/*Define o conteudo do pseudo-elemento como uma string vazia necessária para criar o pseudo-elemento*/
+    width: 3.5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;/*Define a posição do pseudo elemento como absoluta, o que nos permite posiciona-lo em relação ao seu elemento pai*/
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.card-categoria span{
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;/*Ele define o formato do cursor como uma mão apontando ao passar o mousse sobre o <spa>*/
+}
+
+.card-categoria span:hover{
+    color: white;
+}
+
+.align{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    padding: 3rem 0;
+}
+
+.base-conteudo{
+    display: flex;
+    justify-content: baseline;
+    grid-template-columns: repeat(3, 1fr);/*Define um modelo de grade com 4 colunas de largura igual usuando grid-template-columns*/
+    gap: 3rem;/*Adiciona um espaço de 3rem entre as células da grade usando gap*/
+    padding: 3rem 0;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    gap: 1.5rem;
+    width: 250px;
+    background-color: white;
+    padding: 1.0rem;
+    box-shadow: 10px 5px 5px rgb(19, 19, 19);
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;/*Define a direção flexivel para coluna usando flex-direction*/
+    gap: 0.5rem;
+}
+
+.conteudo span{
+    font-weight: 700;/*Define o peso da fonte para 700 usando o font-weight*/
+    font-size: 1.2rem;
+    color: black;
+}
+
+.conteudo p{
+    color: #777;
+    font-weight: 400;
+}
+
+/*PRODUTOS*/
+
+
+.tituloproduct{
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: #fff;
+    padding: 0.5rem 40rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.heading-1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    color: white;
+}
+
+.container-produtos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);/*Mantem 4 colunas em 1 linha*/
+    gap: 2rem;
+    margin: 50px 50px 50px 50px;
+}
+
+.card-product{
+    background-color: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.container-img{
+    position: relative;
+}
+
+.container-img img{
+    width: 100%;
+}
+
+.container-img .discount{
+    position: absolute;
+    left: 0;
+    color: #fff;
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+.card-product:hover .discount{
+    background-color: #e81b1b;
+}
+
+  /**********************************************/
+ /*            ANIMAÇÃO BOTÕES                 */
+/**********************************************/
+
+.button-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;/*Posição absoluta para posicionamento especifico*/
+    top: 0; /*Alinhamento no topo*/
+    right: -3rem;/*Alinhamento a direita*/
+    z-index: -1;/*Defini a sobreposição inicial*/
+    transition: all 0.4s ease;/*Animção de transição suave*/
+}
+
+.button-group span{
+    border: 1px solid#777;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.button-group span:hover{
+    background-color: #777;
+}
+
+.button-group span i{
+    font-size: 1.5rem;
+    color:#777;
+}
+
+.button-group span:hover i{
+    color: #fff;
+}
+
+.card-product:hover .button-group{
+    z-index: 0;
+    right: -1rem;
+} 
+
+  /**********************************************/
+ /*            INICIA-SE A ESTRELA             */
+/**********************************************/
+
+.content-card-product{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;/*Cria duas colunas de tamanho igual*/
+    grid-template-rows: repeat(4, min-content);/*Cria quatro linhas de altura minima*/
+    row-gap: 1rem;/*Espaçamento vertical entre as linhas*/
+}
+
+.content-card-product h3{
+    grid-row: 2/3;/*Ocupa a segunda linha da grade*/
+    grid-column: 1/-1;/*Ocupa todas as colunas da grade*/
+    font-weight: 400;/*Define o peso da fonte*/
+    font-size: 1.2rem;/*Define o tamanho da fonte*/
+    margin-bottom: 1rem;/*Define a margem inferior*/
+    cursor: pointer;/*Muda o cursor para indicar que o titulo é clicavel*/
+}
+
+.content-card-product h3:hover{
+    color: #000000;/*Muda a cor do titulo ao passar o mouse*/
+}
+
+.add-cart{
+    justify-self: start;/*Alinha o botão ao inicio horizontalmente*/
+    border: 2px solid #000000;/*Define uma borda ao redor do botão*/
+    padding: 1rem;
+    border-radius: 50%;/*Define o formato circular nos cantos, arredondamento*/
+    cursor: pointer;/*Muda o cursor para indicar que o titulo é clicavel*/
+    transition: all 0.4s ease;/*Transição suave ao alterar estilos*/
+    display: flex;/*Define um layout flexivel*/
+    align-items: center;/*Centraliza o conteudo verticalmente*/
+    justify-content: center;/*Centraliza o conteudo horizontalmente*/
+}
+
+.add-cart:hover{
+    background-color: #000000;
+}
+
+.add-cart i{
+    font-size: 0.9rem;/*Define o tamanho do icone*/
+    color: #000000;
+}
+
+.add-cart:hover i{
+    color: #fff;
+}
+
+.content-card-product .price{
+    justify-self: end;
+    align-self: center; /*Centraliza o preço verticalmente*/
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.content-card-product .price span{
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: line-through;/*Aplica um risco sobre o preço*/
+    color: #777;
+    margin-left: 0.5rem;
+}
+
+.local{
+    display: flex;
+    gap: 2rem;
+}
+
+.form{
+    width: 100%;/*Define a largura do formulário*/
+    max-width: 400px;/*Define a largura maxima do formulário*/
+    flex-direction: column;/*Define a direção do formulário como coluna*/
+    gap: 1rem;
+    background-color: #777;
+    border-radius: 20px;
+}
+
+.blogs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container-blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20rem;
+}
+
+.card-blog{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 20px 10px;
+    padding: 10px 20px 50px 5px;
+    background-color: #f9f5f0;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-blog .conta{
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;/*Oculta o conteudo que excede o conteiner*/
+}
+
+.container-img{
+    border-radius: 10px;
+    width: 400px;
+}
+
+.button-group-blog{
+    position: absolute;/*Define a posição absoluta do grupo de botões*/
+    bottom: 1.2rem;
+    right: -2.5rem;/*Inicialmente posiciona o grupo de botões a direita,fora da tela*/
+    display: flex;
+    gap: 0.7rem;
+    z-index: -1;/*Coloca o grupo de botões atrás do conteudo*/
+    transition: all 0.3s ease; /*Adiciona uma transição suave de 0.3s para o movimento*/
+}
+
+.card-blog:hover .button-group-blog{
+    z-index: 0;
+    right: 1.5rem;
+}
+
+.button-group-blog span{
+    background-color: #777;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.button-group-blog span i{
+    font-size: 1.3rem;
+}
+
+.button-group-blog span:hover i{
+    color: #ffffff;
+}
+
+.button-group-blog span:hover{
+    background-color: #415de8;
+}
+
+.content-blog h3{
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: #7f8ac2;
+    font-weight: 400;
+}
+
+.content-blog h3:hover{
+    color: #415de8;
+    cursor: pointer;
+}
+
+.content-blog p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.content-blog span{
+    color: #777;
+    font-size: 1.3rem;
+}
+
+.btn-read-more{
+    padding: 1rem 3rem;
+    background-color: #777;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-radius: 2rem;
+    margin: 2rem 0 5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-read-more:hover{
+    background-color: #415de8;
+}
+
+/* ********************************** */
+/*               FOOTER               */
+/* ********************************** */
+
+.footer {
+	background-color: #695a49;
+}
+
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 3rem;
+	background-color: #c7a17a;
+}
+
+.menu-footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) 30rem;
+	gap: 3rem;
+	justify-items: center;
+}
+
+.title-footer {
+	font-weight: 600;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+	list-style: none;
+	color: #fff;
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+
+.information ul li a,
+.my-account ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+	color: black;
+}
+
+.social-icons {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.social-icons span {
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icons span i {
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.facebook {
+	background-color: #3b5998;
+}
+
+.twitter {
+	background-color: #00acee;
+}
+
+.youtube {
+	background-color: #c4302b;
+}
+
+.pinterest {
+	background-color: #c8232c;
+}
+
+.instagram {
+	background: linear-gradient(
+		#405de6,
+		#833ab4,
+		#c13584,
+		#e1306c,
+		#fd1d1d,
+		#f56040,
+		#fcaf45
+	);
+}
+
+.content p {
+	font-size: 0.8rem;
+	color: #fff;
+	font-weight: 300;
+}
+
+.content input {
+	outline: none;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #d2b495;
+	cursor: pointer;
+	padding: 0.5rem 0 1.2rem;
+	color: black;
+	display: block;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+	width: 100%;
+	font-family: inherit;
+}
+
+.content input::-webkit-input-placeholder {
+	color: #eee;
+}
+
+.content button {
+	border: none;
+	background-color: #000;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1rem 3rem;
+	border-radius: 2rem;
+	font-size: 0.9rem;
+	font-family: inherit;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+.content button:hover {
+	background-color:#695A49;
+	color: white;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2rem;
+	border-top: 1px solid #d2b495;
+	justify-content: center;
+	align-items: center;
+}
+
+.copyright p {
+	font-weight: 400;
+	font-size: 1.1rem;
+}
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+@media (max-width: 768px) {
+	html {
+		font-size: 55%;
+	}
+
+	.hero {
+		padding: 2rem;
+	}
+
+	.customer-support {
+		display: none;
+	}
+
+	.content-shopping-cart {
+		display: none;
+	}
+
+	.navbar {
+		padding: 1rem 2rem;
+	}
+
+	.navbar .fa-bars {
+		display: block;
+		color: #fff;
+		font-size: 3rem;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		margin: 0 auto;
+		padding: 25rem 0;
+	}
+
+	.container-features {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 3rem 2rem;
+	}
+
+	.card-feature {
+		padding: 2rem;
+	}
+
+	.heading-1 {
+		font-size: 2.4rem;
+	}
+
+	.card-category {
+		height: 12rem;
+	}
+
+	.card-category p {
+		font-size: 2rem;
+		text-align: center;
+		line-height: 1;
+	}
+
+	.card-category span {
+		font-size: 1.4rem;
+	}
+
+	.container-options {
+		align-items: center;
+	}
+
+	.container-options span {
+		text-align: center;
+		padding: 1rem 2rem;
+	}
+
+	.container-products {
+		grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+	}
+
+	.gallery {
+		grid-template-rows: repeat(2, 15rem);
+	}
+
+	.container-blogs {
+		overflow: hidden;
+		grid-template-columns: 1fr 1fr;
+
+		height: 52rem;
+	}
+
+	.menu-footer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.copyright {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
+	}
+}
+
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 468px       */
+/* ********************************** */
+@media (max-width: 468px) {
+	html {
+		font-size: 42.5%;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		padding: 22rem 0;
+	}
+
+	.heading-1 {
+		font-size: 2.8rem;
+	}
+
+	.card-feature {
+		flex-direction: column;
+		border-radius: 2rem;
+	}
+
+	.feature-content {
+		align-items: center;
+	}
+
+	.feature-content p {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+
+	.feature-content span {
+		font-size: 1.6rem;
+		text-align: center;
+	}
+
+	.container-options span {
+		font-size: 1.8rem;
+		padding: 1rem 1.5rem;
+		font-weight: 500;
+	}
+
+	.container-products {
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		gap: 1rem;
+	}
+
+	.container-img .discount {
+		font-size: 2rem;
+	}
+
+	.content-card-product h3 {
+		font-size: 2.2rem;
+	}
+
+	.gallery {
+		grid-template-rows: repeat(2, 20rem);
+	}
+
+	.blogs {
+		padding: 2rem;
+	}
+
+	.container-blogs {
+		grid-template-columns: 1fr;
+		height: 75rem;
+	}
+
+	.content-blog h3 {
+		font-size: 2.4rem;
+	}
+
+	.content-blog span {
+		font-size: 1.8rem;
+	}
+
+	.content-blog p {
+		font-size: 2.2rem;
+	}
+
+	.btn-read-more{
+		font-size: 1.8rem;
+	}
+
+	.contact-info ul,
+	.information ul,
+	.my-account ul{
+		display: none;
+	}
+
+	.contact-info {
+		align-items: center;
+	}
+
+	.menu-footer{
+		grid-template-columns: 1fr;
+	}
+
+	.content p{
+		font-size: 1.6rem;
+	}
+}
